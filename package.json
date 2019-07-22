@@ -23,6 +23,7 @@
     "start": "sirv public --single",
     "start:dev": "sirv public --single --dev",
     "lambda-serve": "netlify-lambda serve functions",
-    "lambda-build": "netlify-lambda build functions"
+    "lambda-build": "netlify-lambda build functions",
+    "netlify-build": "netlify-lambda build functions && rollup -c"
   }
 }
