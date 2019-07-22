@@ -187,7 +187,7 @@ import ContactForm from './components/ContactForm.svelte'
 					<img src="images/gear-icon.svg" alt="Gear">
 					<h2>Add functionality</h2>
 					<p>
-						Features don't program themselves!  I turn 1s and 0s into databases, APIs, and whatever you can think of
+						Features don't program themselves!  I turn 1s and 0s into databases, APIs, or whatever else you can think of
 						to make your site more than a static page.
 					</p>
 				</li>
