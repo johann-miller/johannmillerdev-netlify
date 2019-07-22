@@ -120,7 +120,7 @@ function sendEmail() {
 
 	// If the form is validated, tell the server to send an email, and provide feedback if there was an error
 	if (nameError == '' && emailError == '' && messageError == '') {
-		fetch('https://johannmiller.dev/send-email', {
+		fetch('/.netlify/functions/send-email', {
 			method: 'post',
 			headers: {
 				'Accept': 'application/json',
