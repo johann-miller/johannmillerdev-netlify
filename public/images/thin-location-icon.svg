@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="60" height="60" version="1.1" viewBox="0 0 15.875 15.875" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient988" x1="2.5814" x2="13.294" y1="281.12" y2="297" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#c0f" offset="0"/>
+   <stop stop-color="#0cf" offset="1"/>
+  </linearGradient>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(0 -281.12)">
+  <path d="m7.938 281.13c-2.956-2.7e-4 -5.3566 2.4001-5.3566 5.3561v5.1e-4c0.00156 0.93395 0.24796 1.8509 0.71337 2.6604a0.19361 0.19361 0 0 0 0.00907 0.0171l4.4657 7.7437a0.19361 0.19361 0 0 0 0.33576 0l4.4632-7.7437a0.19361 0.19361 0 0 0 0.0091-0.0177 0.19361 0.19361 0 0 0 5.04e-4 -2e-3c0.46567-0.80878 0.713-1.7248 0.71539-2.6584v-5.1e-4c-2.4e-5 -2.9556-2.4-5.3558-5.3556-5.3561zm0 0.38718c2.7462 2.9e-4 4.9681 2.2223 4.9684 4.9684-0.0021 0.83779-0.22765 1.6561-0.63271 2.3882l-0.20821 0.38719-4.128 7.1619-4.1305-7.1619-0.20821-0.38719c-0.40415-0.73212-0.62867-1.5502-0.63019-2.3876v-5e-4c2.976e-4 -2.7465 2.2228-4.9686 4.9694-4.9684zm0 2.8888c-1.1466-2.1e-4 -2.0803 0.93349-2.0801 2.0801 1.046e-4 1.1464 0.93371 2.0798 2.0801 2.0796 1.1462-1e-4 2.0795-0.93342 2.0796-2.0796 2.01e-4 -1.1464-0.9332-2.08-2.0796-2.0801zm0 0.38718c0.93715 9e-5 1.6926 0.75578 1.6924 1.6929-8.49e-5 0.93697-0.75546 1.6924-1.6924 1.6924-0.93715 1.6e-4 -1.6928-0.75529-1.6929-1.6924-1.657e-4 -0.93732 0.75561-1.6931 1.6929-1.6929zm-4.4879 4.0821a0.19361 0.19361 0 0 0-0.019157 3e-3 0.19361 0.19361 0 0 1 0.019157-3e-3zm9.0888 0.0565a0.19361 0.19361 0 0 1 0.01311 0.0146 0.19361 0.19361 0 0 0-0.01311-0.0146zm0.04991 0.0902a0.19361 0.19361 0 0 1 0.0055 0.0499 0.19361 0.19361 0 0 0-0.0055-0.0499zm-9.3106 0.0313a0.19361 0.19361 0 0 0 0.00504 0.058 0.19361 0.19361 0 0 1-0.00504-0.058zm9.3126 0.0514a0.19361 0.19361 0 0 1-4e-3 0.0166 0.19361 0.19361 0 0 0 4e-3 -0.0166z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="url(#linearGradient988)" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;paint-order:markers fill stroke;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+ </g>
+</svg>

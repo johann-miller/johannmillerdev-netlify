@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="60" height="60" version="1.1" viewBox="0 0 15.875 15.875" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient2929" x1="9.2176" x2="50.909" y1="13.456" y2="43.382" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#06f" offset="0"/>
+   <stop stop-color="#0cf" offset="1"/>
+  </linearGradient>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(0 -281.12)">
+  <path transform="matrix(.26458 0 0 .26458 0 281.12)" d="m38.156 9.3301c-5.7983 0.0075591-11.009 2.9193-13.641 7.4414-1.5127-0.99141-3.2352-1.6436-5.0488-1.6465-5.1564 8.31e-4 -9.3465 4.2037-9.3457 9.375-2.41e-4 0.047244 0.007359 0.093759 0.007812 0.14062h-2.4082c-4.2702 3.8e-5 -7.7207 3.4698-7.7207 7.752s3.4505 7.7422 7.7207 7.7422h26.021v7.752h9.3379v-7.752h9.1992c4.2702 0 7.7207-3.46 7.7207-7.7422 0-3.8866-2.9247-6.927-6.6445-7.4863 0.12888-0.69679 0.22805-1.397 0.23047-2.1035-9.83e-4 -7.473-6.9504-13.472-15.43-13.473zm0 1.0039c8.0098 1.52e-4 14.431 5.6178 14.432 12.469-0.002601 0.75976-0.087481 1.5107-0.25 2.2578l-0.11914 0.5625 0.56836 0.042969c3.4854 0.2623 6.2168 3.1539 6.2168 6.7266 0 3.7473-2.9929 6.7461-6.7246 6.7461h-9.1992v-6.7539h6.6152l-11.279-15-0.40625 0.53125-10.881 14.469h6.6133v6.7539h-26.021c-3.7317 0-6.7246-2.9988-6.7246-6.7461s2.9929-6.748 6.7246-6.748h3.4551l-0.037109-0.53906c-0.013455-0.20107-0.014692-0.39609-0.013672-0.59766v-0.007812c-7.12e-4 -4.6327 3.7277-8.3782 8.3418-8.3789 1.7564 0.002759 3.465 0.56804 4.8867 1.6035l0.46484 0.33203 0.27344-0.50195c2.3508-4.3759 7.4382-7.2134 13.064-7.2207zm0.25977 8.7109 9.2793 12.344h-5.6191v8.7461 6.748h-7.3301v-6.748-8.7461h-5.6172l9.2871-12.344z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="url(#linearGradient2929)" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;paint-order:stroke markers fill;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+ </g>
+</svg>
