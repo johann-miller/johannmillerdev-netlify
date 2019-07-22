@@ -52,7 +52,7 @@ exports.handler = function(event, context, callback){
   let clientData = {
     from: 'noreply@mail.johannmiller.dev',
     to: email,
-    subject: 'You message was sent!',
+    subject: 'Your message was sent!',
     text: 'Hello ' + name + ", \n\n This is a confirmation that your email to me was successful.  I look forward to getting in touch! \n\n This is an automated message"
   }
 
