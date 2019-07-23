@@ -61,7 +61,7 @@ section {
 }
 
 #services li {
-	width: 35rem;
+	width: 38rem;
 	max-width: calc(100vw - 2rem);
 }
 
