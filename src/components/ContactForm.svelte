@@ -154,9 +154,11 @@ async function sendEmail() {
 		statusMessage = errorMessage
 		sendError = true
 		showFeedback = true
-
-		console.log('error!')
 	})
+
+	if (sendError) {
+		return
+	}
 
 	response = await response.text()
 	response = await JSON.parse(response)
