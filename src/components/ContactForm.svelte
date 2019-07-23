@@ -56,6 +56,11 @@ form {
 	color: green;
 }
 
+.form-feedback img {
+	height: 5rem;
+	width: auto;
+}
+
 .form-feedback span {
 	text-align: center;
 	margin: 2rem 0;
@@ -149,6 +154,8 @@ async function sendEmail() {
 		statusMessage = errorMessage
 		sendError = true
 		showFeedback = true
+
+		console.log('error!')
 	})
 
 	response = await response.text()
