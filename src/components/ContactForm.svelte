@@ -107,6 +107,8 @@ function validateName() {
 	} else {
 		nameError = false
 	}
+
+	return nameError
 }
 
 function validateEmail() {
@@ -117,6 +119,8 @@ function validateEmail() {
 	} else {
 		emailError = false
 	}
+
+	return emailError
 }
 
 function validateMessage() {
@@ -125,6 +129,8 @@ function validateMessage() {
 	} else {
 		messageError = false
 	}
+
+	return messageError
 }
 
 function submit() {
@@ -133,11 +139,9 @@ function submit() {
 
 // sendEmail sends an email if the form passes validation
 async function sendEmail() {
-	validateName();
-	validateEmail();
-	validateMessage();
 
-	if (nameError || emailError || messageError) {
+	// Validate form
+	if (validateName() || validateEmail() || validateMessage()) {
 		return;
 	}
 
@@ -156,10 +160,12 @@ async function sendEmail() {
 		showFeedback = true
 	})
 
+	// If there was an error, exit
 	if (sendError) {
 		return
 	}
 
+	// Parse response
 	response = await response.text()
 	response = await JSON.parse(response)
 
