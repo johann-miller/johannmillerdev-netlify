@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="60" height="60" version="1.1" viewBox="0 0 15.875 15.875" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(0 -281.12)">
+  <rect x=".19844" y="284.81" width="15.478" height="8.5033" fill="#fff" stroke="#ccc" stroke-linecap="square" stroke-width=".39687" style="paint-order:stroke markers fill"/>
+  <rect x=".19844" y="284.81" width="15.478" height="1.1513" rx="1.1369e-13" ry="1.1369e-13" fill="#80ffb3" style="paint-order:stroke markers fill"/>
+  <g fill="#fff">
+   <circle cx="15.013" cy="285.39" r="0" style="paint-order:stroke markers fill"/>
+   <circle cx="13.82" cy="285.38" r="0" style="paint-order:stroke markers fill"/>
+   <circle cx="12.627" cy="285.39" r="0" style="paint-order:stroke markers fill"/>
+  </g>
+  <path d="m0.19844 284.81v1.1513h9.5343l-1.47-1.1513z" fill="#0f6"/>
+  <g fill="#fff">
+   <ellipse cx="13.166" cy="285.39" rx=".31473" ry=".31256" style="paint-order:stroke markers fill"/>
+   <ellipse cx="15.057" cy="285.39" rx=".31473" ry=".31256" style="paint-order:stroke markers fill"/>
+   <ellipse cx="14.111" cy="285.39" rx=".31473" ry=".31256" style="paint-order:stroke markers fill"/>
+  </g>
+  <g transform="matrix(.89766 0 0 .89653 .81229 29.977)" stroke-width="1.1147">
+   <path transform="matrix(.26458 0 0 .26458 0 281.12)" d="m35.312 20.438a9.1875 9.1875 0 0 0-8.7266 6.3359 6.5625 6.5625 0 0 0-3.0859-0.77344 6.5625 6.5625 0 0 0-6.5508 6.3125h-1.668c-2.77 0-5 2.23-5 5s2.23 5 5 5h29.438c2.77 0 5-2.23 5-5s-2.23-5-5-5h-0.62109a9.1875 9.1875 0 0 0 0.40234-2.6875 9.1875 9.1875 0 0 0-9.1875-9.1875z" fill="none" stroke="#ccc" stroke-linecap="round" stroke-width="1.1147" style="paint-order:stroke markers fill"/>
+   <g>
+    <path d="m9.5098 288.69-1.6612 1.8298h0.93873v2.4984h1.4449v-2.4984h0.93873z" fill="#0f6" style="paint-order:stroke markers fill"/>
+    <path d="m6.0505 288.47a0.95975 0.95975 0 0 0-0.96 0.96 0.95975 0.95975 0 0 0 0.25694 0.65179 1.0086 1.0086 0 0 1-0.088987-0.41134 1.0086 1.0086 0 0 1 1.0083-1.0083 1.0086 1.0086 0 0 1 0.50446 0.13613 0.95975 0.95975 0 0 0-0.72074-0.32825z" fill="#80ffb3" style="paint-order:stroke markers fill"/>
+    <path d="m9.8631 286.92a1.6218 1.157 3.8877 0 0-1.9697 0.77191 1.6218 1.157 3.8877 0 0 0.14931 0.84375 1.7044 1.2159 3.8877 0 1 0.02547-0.50676 1.7044 1.2159 3.8877 0 1 2.0688-0.81076 1.7044 1.2159 3.8877 0 1 0.76864 0.33481 1.6218 1.157 3.8877 0 0-1.0426-0.63295z" fill="#80ffb3" style="paint-order:stroke markers fill"/>
+   </g>
+  </g>
+ </g>
+</svg>

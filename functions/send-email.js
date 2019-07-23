@@ -32,9 +32,12 @@ exports.handler = function(event, context, callback){
   email = sanitizeString(email)
   message = sanitizeString(message)
 
-  if (name == [null, ''] || email == [null, ''] || message == [null, '']) {
+  // Check if the sanitized strings are empty
+  let empty = [null, '']
+
+  if (empty.includes(name) || empty.includes(email) || empty.includes(message)) {
     sendError = true
-    status = 500
+    status = 400
 
     callback(null, {
       statusCode: status,

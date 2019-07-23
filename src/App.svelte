@@ -66,7 +66,7 @@ section {
 }
 
 .service {
-	margin-top: 3rem;
+	margin-top: 2rem;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -79,7 +79,7 @@ section {
 
 .service img {
 	grid-area: icon;
-	width: 5rem;
+	width: 8rem;
 	height: auto;
 	margin-bottom: 1rem;
 }
@@ -126,14 +126,31 @@ main {
 			"icon heading"
 			"icon description"
 		;
+		align-items: center;
+	}
+
+	.service:not(:first-child) {
+		margin-top: 5rem;
+	}
+
+	.service:nth-child(even) {
+		grid-template:
+			"heading icon"
+			"description icon"
+		;
 	}
 
 	.service img {
 		grid-area: icon;
-		width: 6rem;
+		width: 10rem;
 		height: auto;
-		margin-right: 2rem;
+		margin: 0 3rem 0 0;
 		align-self: start;
+	}
+
+	.service:nth-child(even) img {
+		margin-right: 0;
+		margin-left: 3rem;
 	}
 
 	.service h2 {
@@ -176,7 +193,7 @@ import ContactForm from './components/ContactForm.svelte'
 			<h1>What I can do for you</h1>
 			<ul>
 				<li class="service">
-					<img src="images/webpage-icon.svg" alt="Webpage">
+					<img src="images/webpage.svg" alt="Webpage">
 					<h2>Design your website</h2>
 					<p>
 						You need a website, and I know how to make them.  I'll design the layout, graphics, and other visual
@@ -184,7 +201,7 @@ import ContactForm from './components/ContactForm.svelte'
 					</p>
 				</li>
 				<li class="service">
-					<img src="images/gear-icon.svg" alt="Gear">
+					<img src="images/gear.svg" alt="Gear">
 					<h2>Add functionality</h2>
 					<p>
 						Features don't program themselves!  I turn 1s and 0s into databases, APIs, or whatever else you can think of
@@ -192,7 +209,7 @@ import ContactForm from './components/ContactForm.svelte'
 					</p>
 				</li>
 				<li class="service">
-					<img src="images/cloud-icon.svg" alt="Cloud">
+					<img src="images/cloud.svg" alt="Cloud">
 					<h2>Deploy</h2>
 					<p>
 						"How do I put my website on the internet?" is a question you won't have to worry about.  I deploy
