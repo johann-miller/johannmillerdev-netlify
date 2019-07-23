@@ -12,9 +12,10 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "sirv-cli": "^0.4.4",
+    "dotenv": "^8.0.0",
     "mailgun-js": "^0.22.0",
-    "netlify-lambda": "^1.5.0"
+    "netlify-lambda": "^1.5.0",
+    "sirv-cli": "^0.4.4"
   },
   "scripts": {
     "build": "rollup -c",

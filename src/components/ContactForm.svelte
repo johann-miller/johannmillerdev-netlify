@@ -60,6 +60,17 @@ form {
 	text-align: center;
 	margin: 2rem 0;
 }
+
+.loading {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	background: rgba(255, 255, 255, 0.9);
+}
 </style>
 <script>
 import { fade } from 'svelte/transition';
@@ -74,88 +85,88 @@ let statusMessage
 let sendError = false
 
 // Errors corresponding to form inputs
-let nameError = null
-let emailError = null
-let messageError = null
+let nameError, emailError, messageError = false
 
 // Message texts
 let errorMessage = 'There was an error sending your message.  Please email me directly at johann@johannmiller.dev'
 let successMessage = 'Your message was sent.  A confirmation will be emailed to you shortly.'
 
-// showFeedback toggles a css class
-let showFeedback = false;
+// showFeedback a css class, promise is used for svelte load block
+let showFeedback = false
+let promise
 
 // Form validation functions
 function validateName() {
 	if (name == null || name == '') {
-		nameError = "Please enter a name"
+		nameError = true
 	} else {
-		nameError = ''
+		nameError = false
 	}
 }
 
 function validateEmail() {
-	var regex = /\S+@\S+\.\S+/
+	const regex = /\S+@\S+\.\S+/
 
 	if (!regex.test(email)) {
-		emailError = "Please enter a valid email"
+		emailError = true
 	} else {
-		emailError = ''
+		emailError = false
 	}
 }
 
 function validateMessage() {
 	if (message == null || message == '') {
-		messageError = "Please enter a message"
+		messageError = true
 	} else {
-		messageError = ''
+		messageError = false
 	}
 }
 
+function submit() {
+	promise = sendEmail()
+}
+
 // sendEmail sends an email if the form passes validation
-function sendEmail() {
+async function sendEmail() {
 	validateName();
 	validateEmail();
 	validateMessage();
 
+	if (nameError || emailError || messageError) {
+		return;
+	}
+
 	// If the form is validated, tell the server to send an email, and provide feedback if there was an error
-	if (nameError == '' && emailError == '' && messageError == '') {
-		fetch('/.netlify/functions/send-email', {
-			method: 'post',
-			headers: {
-				'Accept': 'application/json',
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({name: name, email: email, message: message})
-		})
+	let response = await fetch(`/.netlify/functions/send-email`, {
+		method: 'post',
+		headers: {
+			'Accept': 'application/json',
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify({name: name, email: email, message: message})
+	})
+	.catch(() => {
+		statusMessage = errorMessage
+		sendError = true
+		showFeedback = true
+	})
 
-		// turn the HTTP response into text
-		.then(response => response.text())
+	response = await response.text()
+	response = await JSON.parse(response)
 
-		// Parse the JSON data returned
-		.then(data => {
-			let parsed = JSON.parse(data)
+	// If there was an error sending the email or not, set the status message appropriately
+	if (response.sendError) {
+		statusMessage = errorMessage
+		sendError = true
+	} else {
+		statusMessage = successMessage
+		sendError = false
 
-			// If there was an error sending the email or not, set the status message appropriately
-			if (parsed.sendError) {
-				statusMessage = errorMessage
-				sendError = true
-			} else {
-				statusMessage = successMessage
-				sendError = false
+		name = null
+		email = null
+		message = null
 
-				name = null
-				email = null
-				message = null
-
-				showFeedback = true;
-			}
-		})
-		.catch(() => {
-			statusMessage = errorMessage
-			sendError = true
-			showFeedback = true
-		})
+		showFeedback = true;
 	}
 }
 
@@ -171,21 +182,21 @@ function returnForm() {
 			<label for="name">
 				Name
 					{#if nameError}
-						<span class="error" transition:fade="{{duration: 100}}">{nameError}</span>
+						<span class="error" transition:fade="{{duration: 100}}">Please enter a name</span>
 					{/if}
 			</label>
 			<input type="text" name="name" bind:value="{name}" on:blur="{validateName}" required>
 			<label for="email">
 				Email
 					{#if emailError}
-						<span class="error" transition:fade="{{duration: 100}}">{emailError}</span>
+						<span class="error" transition:fade="{{duration: 100}}">Please enter a valid email</span>
 					{/if}
 			</label>
 			<input type="email" name="email" bind:value="{email}" on:blur="{validateEmail}" required>
 			<label for="name">
 				Message
 					{#if messageError}
-						<span class="error" transition:fade="{{duration: 100}}">{messageError}</span>
+						<span class="error" transition:fade="{{duration: 100}}">Please enter a message</span>
 					{/if}
 			</label>
 			<textarea
@@ -195,9 +206,14 @@ function returnForm() {
 				bind:value="{message}"
 				on:blur="{validateMessage}"
 				required></textarea>
-			<button type="submit" on:click="{sendEmail}">Send</button>
+			<button type="submit" on:click="{submit}">Send</button>
 			</form>
 			<span class="note">Or email me directly at johann@johannmiller.dev</span>
+			{#await promise}
+				<div class="loading">
+					<img src="images/loading.svg" alt="Loading">
+				</div>
+			{/await}
 		</div>
 	{#if showFeedback}
 		<div class="form-section-container" class:show-feedback="{showFeedback}" transition:fade="{{duration: 100}}">
