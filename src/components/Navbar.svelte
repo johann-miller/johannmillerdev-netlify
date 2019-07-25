@@ -44,7 +44,7 @@
   }
 
   a:link, a:visited {
-    color: #123;
+    color: inherit;
   }
   
   button {
@@ -66,7 +66,7 @@
     margin-right: 0.5rem;
     font-family: inherit;
     font-size: inherit;
-    color: #123;
+    color: inherit;
   }
   .opened-menu {
     right: 0;
@@ -103,7 +103,7 @@
       padding: 0 2rem;
 
       color: inherit;
-      opacity: 0.5;
+      opacity: 0.65;
     }
 
     a:hover {
