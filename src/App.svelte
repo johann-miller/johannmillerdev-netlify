@@ -8,11 +8,18 @@ h1 {
 	margin-top: 2rem;
 }
 
-.left, .right, header {
+.left, .right, header, .top, .bottom {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
+}
+
+header {
+	flex-grow: 1;
+	align-items: stretch;
+	width: 100%;
+	background: #2ca089;
 }
 
 header p {
@@ -21,12 +28,39 @@ header p {
 	padding: 0 1rem;
 }
 
+.top {
+	height: 100%;
+	flex-grow: 2;
+	width: 100%;
+	padding: 5rem 2rem;
+}
+
+.top h1{
+	color: white;
+	text-align: left;
+	font-weight: bolder;
+}
+
+.bottom {
+	padding: 8rem 2rem;
+	border-top: 1px white solid;
+}
+
+.bottom p {
+	color: white;
+	font-weight: 400;
+}
+
+.bottom a {
+	background: #2ca089;
+	color: white;
+	border: 2px white solid;
+}
+
 .left {
-	background: linear-gradient(to bottom right, white, #fafafa);
 	width: 100%;
 	min-height: calc(100vh - 3rem);
 	margin-top: 3rem;
-	padding: 2rem 0;
 }
 
 .right section {
@@ -40,18 +74,6 @@ section {
 	justify-content: center;
 	padding: 3rem 1rem;
 	max-width: 100vw;
-}
-
-.profile-picture {
-	width: 13rem;
-	height: auto;
-	-webkit-mask-image: url('../images/circle.svg');
-	-webkit-mask-repeat: no-repeat;
-	-webkit-mask-size: 100%;
-	mask-image: url('../images/circle.svg');
-	mask-repeat: no-repeat;
-	mask-size: 100%;
-	margin-bottom: 2rem;
 }
 
 #services ul {
@@ -107,7 +129,6 @@ main {
 		margin-top: 0;
 		min-height: 100vh;
 		top: 0;
-		border-right: 1px #e7e7e7 solid;
 	}
 
 	.right {
@@ -144,13 +165,13 @@ main {
 		grid-area: icon;
 		width: 10rem;
 		height: auto;
-		margin: 0 3rem 0 0;
+		margin: 0 2rem 0 0;
 		align-self: start;
 	}
 
 	.service:nth-child(even) img {
 		margin-right: 0;
-		margin-left: 3rem;
+		margin-left: 2rem;
 	}
 
 	.service h2 {
@@ -171,12 +192,15 @@ import ContactForm from './components/ContactForm.svelte'
 <main>
 	<div class="left">
 		<header id="about-me">
-			<h1>Hello, I'm Johann!</h1>
-			<img src="images/profile-picture-500x500.webp" alt="Johann Miller" class="profile-picture">
-			<p>
-				I'm a web developer and designer in Columbus, Ohio currently doing freelance work.
-			</p>
-			<a href="/#contact" role="button" class="contact-button">Contact</a>
+			<div class="top">
+				<h1>Johann<br>Miller<br>Developer<br>&Designer</h1>
+			</div>
+			<div class="bottom">
+				<p>
+					I'm a web developer and designer in Columbus, Ohio currently doing freelance work.
+				</p>
+				<a href="/#contact" role="button" class="contact-button">Contact</a>
+			</div>
 		</header>
 	</div>
 	<div class="right">
