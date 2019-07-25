@@ -19,7 +19,7 @@ header {
 	flex-grow: 1;
 	align-items: stretch;
 	width: 100%;
-	background: #2ca089;
+	background: #0784b5;
 }
 
 header p {
@@ -52,7 +52,7 @@ header p {
 }
 
 .bottom a {
-	background: #2ca089;
+	background: #0784b5;
 	color: white;
 	border: 2px white solid;
 }
@@ -91,6 +91,7 @@ section {
 
 .service h2 {
 	text-align: center;
+	line-height: 1.5;
 }
 
 .service img {
@@ -142,6 +143,7 @@ main {
 			"icon description"
 		;
 		align-items: center;
+		justify-content: center;
 	}
 
 	.service:not(:first-child) {
@@ -160,7 +162,6 @@ main {
 		width: 10rem;
 		height: auto;
 		margin: 0 2rem 0 0;
-		align-self: start;
 	}
 
 	.service:nth-child(even) img {

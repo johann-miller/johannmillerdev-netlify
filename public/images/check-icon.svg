@@ -31,9 +31,9 @@
      inkscape:window-height="1375"
      id="namedview874"
      showgrid="false"
-     inkscape:zoom="18.546875"
-     inkscape:cx="32"
-     inkscape:cy="32"
+     inkscape:zoom="15.44554"
+     inkscape:cx="16.334583"
+     inkscape:cy="34.508088"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -53,18 +53,18 @@
   <g
      transform="translate(0 -280.07)"
      id="g870"
-     style="fill:#2ca089;fill-opacity:1">
+     style="fill:#0784b5;fill-opacity:1">
     <path
        d="m2.0198 288.65 4.427 4.5165 8.4667-13.099-8.4667 16.933z"
        fill="#008000"
        id="path866"
-       style="fill:#2ca089;fill-opacity:1" />
+       style="fill:#0784b5;fill-opacity:1" />
     <ellipse
        cx="5.9295"
        cy="285.14"
        r="7.5123"
        fill="none"
-       style="paint-order:markers stroke fill;fill:#2ca089;fill-opacity:1"
+       style="paint-order:markers stroke fill;fill:#0784b5;fill-opacity:1"
        id="ellipse868" />
   </g>
 </svg>
