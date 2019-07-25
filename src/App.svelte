@@ -59,12 +59,7 @@ header p {
 
 .left {
 	width: 100%;
-	min-height: calc(100vh - 3rem);
 	margin-top: 3rem;
-}
-
-.right section {
-	min-height: calc(100vh - 3rem);
 }
 
 section {
@@ -95,7 +90,6 @@ section {
 }
 
 .service h2 {
-	margin-bottom: 0.5rem;
 	text-align: center;
 }
 

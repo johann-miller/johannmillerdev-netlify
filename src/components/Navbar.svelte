@@ -66,7 +66,7 @@
     margin-right: 0.5rem;
     font-family: inherit;
     font-size: inherit;
-    color: inherit;
+    color: #404e5b;
   }
   .opened-menu {
     right: 0;
