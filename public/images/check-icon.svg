@@ -53,18 +53,18 @@
   <g
      transform="translate(0 -280.07)"
      id="g870"
-     style="fill:#37c871">
+     style="fill:#2ca089;fill-opacity:1">
     <path
        d="m2.0198 288.65 4.427 4.5165 8.4667-13.099-8.4667 16.933z"
        fill="#008000"
        id="path866"
-       style="fill:#37c871" />
+       style="fill:#2ca089;fill-opacity:1" />
     <ellipse
        cx="5.9295"
        cy="285.14"
        r="7.5123"
        fill="none"
-       style="paint-order:markers stroke fill;fill:#37c871"
+       style="paint-order:markers stroke fill;fill:#2ca089;fill-opacity:1"
        id="ellipse868" />
   </g>
 </svg>
