@@ -187,7 +187,7 @@ import ContactForm from './components/ContactForm.svelte'
 	<div class="left">
 		<header id="about-me">
 			<div class="top">
-				<h1>Johann<br>Miller<br>Developer<br>&Designer</h1>
+				<h1>Johann<br>Miller<br>Developer<br>& Designer</h1>
 			</div>
 			<div class="bottom">
 				<p>
