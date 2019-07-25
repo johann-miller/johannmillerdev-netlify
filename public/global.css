@@ -104,9 +104,9 @@ button, a[role="button"], a[role="button"]:link, a[role="button"]:visited {
 	height: 2.2rem;
 	font-weight: 400;
 
-	border-radius: 1.1rem;
-	background: white;
-	color: #2ca089;
+	border-radius: 0.2rem;
+	background: #2ca089;
+	color: white;
 	border: 2px solid #2ca089;
 
 	font-family: inherit;
