@@ -129,7 +129,6 @@
   <ul class:opened-menu={menuOpen}>
     <li><a href="/#about-me" on:click="{toggleMenu}" class="about-me-link">About me</a></li>
     <li><a href="/#portfolio" on:click="{toggleMenu}">Portfolio</a></li>
-    <li><a href="/#services" on:click="{toggleMenu}">Services</a></li>
     <li><a href="/#contact" on:click="{toggleMenu}">Contact</a></li>
   </ul>
   <button on:click="{toggleMenu}">

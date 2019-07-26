@@ -71,36 +71,6 @@ section {
 	max-width: 100vw;
 }
 
-#services ul {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
-
-#services li {
-	width: 38rem;
-	max-width: calc(100vw - 2rem);
-}
-
-.service {
-	margin-top: 2rem;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
-
-.service h2 {
-	text-align: center;
-	line-height: 1.5;
-}
-
-.service img {
-	grid-area: icon;
-	width: 8rem;
-	height: auto;
-	margin-bottom: 1rem;
-}
-
 main {
 	display: flex;
 	position: relative;
@@ -132,45 +102,6 @@ main {
 
 	.right section {
 		min-height: calc(100vh - 3rem);
-	}
-
-	.service {
-		display: grid;
-		grid-template-rows: repeat(2, auto);
-		grid-template-columns: repeat(2, auto);
-		grid-template-areas:
-			"icon heading"
-			"icon description"
-		;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.service:not(:first-child) {
-		margin-top: 5rem;
-	}
-
-	.service:nth-child(even) {
-		grid-template:
-			"heading icon"
-			"description icon"
-		;
-	}
-
-	.service img {
-		grid-area: icon;
-		width: 10rem;
-		height: auto;
-		margin: 0 2rem 0 0;
-	}
-
-	.service:nth-child(even) img {
-		margin-right: 0;
-		margin-left: 2rem;
-	}
-
-	.service h2 {
-		text-align: left;
 	}
 }
 </style>
@@ -205,35 +136,6 @@ import ContactForm from './components/ContactForm.svelte'
 			<ul>
 				<li class="project">
 					In progress
-				</li>
-			</ul>
-		</section>
-		<section id="services">
-			<h1>What I can do for you</h1>
-			<ul>
-				<li class="service">
-					<img src="images/webpage.svg" alt="Webpage">
-					<h2>Design your website</h2>
-					<p>
-						You need a website, and I know how to make them.  I'll design the layout, graphics, and other visual
-						aspects to bring you a modern and engaging online presence.
-					</p>
-				</li>
-				<li class="service">
-					<img src="images/gear.svg" alt="Gear">
-					<h2>Add functionality</h2>
-					<p>
-						Features don't program themselves!  I turn 1s and 0s into databases, APIs, or whatever else you can think of
-						to make your site more than a static page.
-					</p>
-				</li>
-				<li class="service">
-					<img src="images/cloud.svg" alt="Cloud">
-					<h2>Deploy</h2>
-					<p>
-						"How do I put my website on the internet?" is a question you won't have to worry about.  I deploy
-						the site for you, leaving more time to focus on your project, while I handle the rest.
-					</p>
 				</li>
 			</ul>
 		</section>
