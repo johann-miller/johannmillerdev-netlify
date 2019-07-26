@@ -27,16 +27,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="806"
-     inkscape:window-height="480"
+     inkscape:window-width="2560"
+     inkscape:window-height="1375"
      id="namedview2399"
      showgrid="false"
      inkscape:zoom="4.4797363"
      inkscape:cx="6.7753011"
      inkscape:cy="32"
-     inkscape:window-x="1052"
-     inkscape:window-y="421"
-     inkscape:window-maximized="0"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg2397" />
   <metadata
      id="metadata2387">
@@ -54,24 +54,24 @@
      transform="translate(0 -280.07)"
      fill="#123"
      id="g2395"
-     style="fill:#37c8ab">
+     style="fill:#0784b5;fill-opacity:1">
     <rect
        y="283.59"
        width="16.933"
        height="1.0583"
        id="rect2389"
-       style="fill:#37c8ab" />
+       style="fill:#0784b5;fill-opacity:1" />
     <rect
        y="288"
        width="16.933"
        height="1.0583"
        id="rect2391"
-       style="fill:#37c8ab" />
+       style="fill:#0784b5;fill-opacity:1" />
     <rect
        y="292.42"
        width="16.933"
        height="1.0583"
        id="rect2393"
-       style="fill:#37c8ab" />
+       style="fill:#0784b5;fill-opacity:1" />
   </g>
 </svg>
