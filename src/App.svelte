@@ -20,7 +20,7 @@ header {
 }
 
 header p {
-	max-width: 22rem;
+	max-width: 25rem;
 	text-align: center;
 	padding: 0 1rem;
 	text-align: center;
