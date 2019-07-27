@@ -50,7 +50,7 @@ main {
 
 @media only screen and (min-width: 60rem) {
 	header, section {
-		min-height: calc(100vw - 2rem);
+		min-height: calc(100vh - 3rem);
 		margin-top: 0;
 	}
 }
