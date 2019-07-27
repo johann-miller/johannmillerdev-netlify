@@ -76,7 +76,7 @@ import ContactForm from './components/ContactForm.svelte'
 			<h1>Johann<br>Miller<br>Developer<br>& Designer</h1>
 			<p>
 				I work with businesses and individuals to give their ideas a modern website with a great user experience.
-				If that sounds something you'd like help with, let's get in touch!
+				If that sounds like something I can help you with, let's get in touch!
 			</p>
 			<a href="/#contact" role="button" class="contact-button">Contact</a>
 	</header>
