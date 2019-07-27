@@ -15,14 +15,18 @@
     position: fixed;
     top: 3rem;
     width: 100vw;
-    right: 100vw;
+    left: 100vw;
 
     background: #fafafa;
-    border-bottom: 1px #e7e7e7 solid;
 
     transition: 0.2s all ease-in-out;
     opacity: 0;
   }
+
+  ul li:first-child {
+    border-top: 1px #e7e7e7 solid;
+  }
+
   ul li {
     display: flex;
     align-items: center;
@@ -69,7 +73,7 @@
     color: #404e5b;
   }
   .opened-menu {
-    right: 0;
+    left: 0;
     opacity: 1;
   }
 
