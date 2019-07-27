@@ -9,8 +9,7 @@
     height: 3rem;
     width: 100%;
 
-    background: white;
-    border-bottom: 1px #e7e7e7 solid;
+    background: #fafafa;
   }
   ul {
     position: fixed;
@@ -18,7 +17,7 @@
     width: 100vw;
     right: 100vw;
 
-    background: white;
+    background: #fafafa;
     border-bottom: 1px #e7e7e7 solid;
 
     transition: 0.2s all ease-in-out;
@@ -39,6 +38,7 @@
     padding: 0 2rem 0 0.5rem;
     margin: 0 0.5rem;
     width: 100%;
+    font-weight: 400;
 
     transition: 0.2s all linear;
   }
@@ -110,10 +110,6 @@
       color: #123;
       opacity: 1;
     }
-
-    .about-me-link {
-      display: none;
-    }
   }
 </style>
 
@@ -127,7 +123,7 @@
 
 <nav>
   <ul class:opened-menu={menuOpen}>
-    <li><a href="/#about-me" on:click="{toggleMenu}" class="about-me-link">About me</a></li>
+    <li><a href="/#about-me" on:click="{toggleMenu}">About me</a></li>
     <li><a href="/#portfolio" on:click="{toggleMenu}">Portfolio</a></li>
     <li><a href="/#contact" on:click="{toggleMenu}">Contact</a></li>
   </ul>

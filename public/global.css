@@ -19,7 +19,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 	line-height: 1.2;
-	color: #0784b5;
+	color: #123;
 }
 
 h1 {
@@ -43,7 +43,7 @@ a, p, span, input, textarea {
 
 label {
 	font-weight: 400;
-	color: #0784b5;
+	color: #404e5b;
 	line-height: 1.5;
 }
 
@@ -105,9 +105,9 @@ button, a[role="button"], a[role="button"]:link, a[role="button"]:visited {
 	font-weight: 400;
 
 	border-radius: 0.2rem;
-	background: #0784b5;
+	background: #123;
 	color: white;
-	border: 2px solid #0784b5;
+	border: none;
 
 	font-family: inherit;
 	font-size: inherit;

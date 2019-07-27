@@ -8,58 +8,30 @@ h1 {
 	margin-top: 2rem;
 }
 
-.left, .right, header, .top, .bottom {
+header {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-}
-
-header {
-	flex-grow: 1;
-	align-items: stretch;
+	background: #fafafa;
 	width: 100%;
-	background: #0784b5;
+	margin-top: 3rem;
+	padding: 2rem 0;
 }
 
 header p {
-	max-width: 28rem;
+	max-width: 22rem;
 	text-align: center;
 	padding: 0 1rem;
+	text-align: center;
 }
 
-.top {
-	height: 100%;
-	flex-grow: 2;
-	width: 100%;
-	padding: 5rem 2rem;
-}
-
-.top h1{
-	color: white;
+header h1{
+	color: #123;
 	text-align: left;
 	font-weight: bolder;
-}
-
-.bottom {
-	padding: 8rem 2rem;
-	border-top: 1px white solid;
-}
-
-.bottom p {
-	color: white;
-	font-weight: 400;
-}
-
-.bottom a {
-	background: #0784b5;
-	color: white;
-	border: 2px white solid;
-}
-
-.left {
-	width: 100%;
-	margin-top: 3rem;
+	border-bottom: 1px #404e5b solid;
+	padding-bottom: 2rem; 
 }
 
 section {
@@ -82,26 +54,9 @@ main {
 }
 
 @media only screen and (min-width: 60rem) {
-	main {
-		display: grid;
-		grid-template-columns: 30vw calc(100% - 30vw);
-		align-items: start;
-	}
-
-	.left {
-		grid-column: 1 / 2;
-		position: sticky;
+	header, section {
+		min-height: calc(100vw - 2rem);
 		margin-top: 0;
-		min-height: 100vh;
-		top: 0;
-	}
-
-	.right {
-		grid-column: 2 / 3;
-	}
-
-	.right section {
-		min-height: calc(100vh - 3rem);
 	}
 }
 </style>
@@ -116,32 +71,25 @@ import ContactForm from './components/ContactForm.svelte'
 </svelte:head>
 
 <main>
-	<div class="left">
-		<header id="about-me">
-			<div class="top">
-				<h1>Johann<br>Miller<br>Developer<br>& Designer</h1>
-			</div>
-			<div class="bottom">
-				<p>
-					I'm a web developer and designer in Columbus, Ohio currently doing freelance work.
-				</p>
-				<a href="/#contact" role="button" class="contact-button">Contact</a>
-			</div>
-		</header>
-	</div>
-	<div class="right">
-		<Navbar />
-		<section id="portfolio">
-			<h1>Portfolio</h1>
-			<ul>
-				<li class="project">
-					In progress
-				</li>
-			</ul>
-		</section>
-		<section id="contact">
-			<h1>Contact</h1>
-			<ContactForm />
-		</section>
-	</div>
+	<Navbar />
+	<header id="about-me">
+			<h1>Johann<br>Miller<br>Developer<br>& Designer</h1>
+			<p>
+				I work with businesses and individuals to give their ideas a modern website with a great user experience.  If that sounds like you,
+				let's get in touch!
+			</p>
+			<a href="/#contact" role="button" class="contact-button">Contact</a>
+	</header>
+	<section id="portfolio">
+		<h1>Portfolio</h1>
+		<ul>
+			<li class="project">
+				In progress
+			</li>
+		</ul>
+	</section>
+	<section id="contact">
+		<h1>Contact</h1>
+		<ContactForm />
+	</section>
 </main>
