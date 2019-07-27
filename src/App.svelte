@@ -4,10 +4,6 @@ h1 {
 	padding: 0 1rem;
 }
 
-.contact-button {
-	margin-top: 2rem;
-}
-
 header {
 	display: flex;
 	flex-flow: column;
@@ -20,18 +16,17 @@ header {
 }
 
 header p {
-	max-width: 25rem;
+	max-width: 22rem;
 	text-align: center;
-	padding: 0 1rem;
-	text-align: center;
+	padding: 2rem 1rem;
+	text-align: left;
+	border-top: 1px #404e5b solid;
 }
 
 header h1{
 	color: #123;
 	text-align: left;
 	font-weight: bolder;
-	border-bottom: 1px #404e5b solid;
-	padding-bottom: 2rem; 
 }
 
 section {
