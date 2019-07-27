@@ -185,7 +185,7 @@ async function sendEmail() {
 	}
 }
 
-// returnForm clears the reponse status message, triggering appropriate DOM elements to be rendered
+// returnForm clears the response status message, triggering appropriate DOM elements to be rendered
 function returnForm() {
 	showFeedback = false;
 }
