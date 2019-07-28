@@ -66,19 +66,36 @@
     background: none;
     border: none;
   }
-  button img {
+
+  .image-container {
+    width: 2rem;
     height: 2rem;
-    width: auto;
+    position: relative;
   }
+
+  .image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+
+    transition: opacity 0.2s ease-in-out;
+  }
+
   button span {
     margin-left: 0.5rem;
     font-family: inherit;
     font-size: inherit;
     color: #404e5b;
   }
+
   .opened-menu {
     left: 0;
     opacity: 1;
+  }
+
+  .opaque {
+    opacity: 0;
   }
 
   @media only screen and (min-width: 60rem) {
@@ -128,9 +145,16 @@
 
 <script>
   let menuOpen = false;
+  let menuText = "Menu"
 
   function toggleMenu() {
     menuOpen = !menuOpen;
+
+    if (menuOpen) {
+      menuText = "Close"
+    } else {
+      menuText = "Menu"
+    }
   }
 </script>
 
@@ -141,7 +165,10 @@
     <li><a href="/#contact" on:click="{toggleMenu}">Contact</a></li>
   </ul>
   <button on:click="{toggleMenu}">
-    <img src="images/burger-menu.svg" alt="menu-icon">
-    <span>Menu</span>
+    <div class="image-container">
+      <img src="images/burger-menu.svg" alt="Menu icon" class:opaque="{menuOpen}">
+      <img src="images/cross-icon.svg" alt="Close icon" class:opaque="{!menuOpen}">
+    </div>
+    <span>{menuText}</span>
   </button>
 </nav>

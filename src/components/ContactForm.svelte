@@ -137,7 +137,7 @@ function submit() {
 	promise = sendEmail()
 }
 
-// sendEmail sends an email if the form passes validation
+// sendEmail sends an email if the user has filled out the form and submitted
 async function sendEmail() {
 
 	// Validate form
@@ -234,10 +234,10 @@ function returnForm() {
 		<div class="form-section-container" class:show-feedback="{showFeedback}" transition:fade="{{duration: 100}}">
 			<div class="form-feedback" class:send-error={sendError}>
 				{#if !sendError}
-					<img src="images/check-icon.svg" alt="Check mark">
+					<img src="images/smile-emoticon.svg" alt="Smile emoticon">
 				{/if}
 				{#if sendError}
-					<img src="images/cross-icon.svg" alt="X mark">
+					<img src="images/frown-emoticon.svg" alt="Frown emoticon">
 				{/if}
 				<span>{statusMessage}</span>
 				<button on:click="{returnForm}">

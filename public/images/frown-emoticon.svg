@@ -14,7 +14,7 @@
    version="1.1"
    viewBox="0 0 15.874688 15.874688"
    id="svg858"
-   sodipodi:docname="cross-icon.svg"
+   sodipodi:docname="frown-emoticon.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <defs
      id="defs862" />
@@ -32,7 +32,7 @@
      id="namedview860"
      showgrid="false"
      inkscape:zoom="9.2734375"
-     inkscape:cx="36.536623"
+     inkscape:cx="36.213118"
      inkscape:cy="23.678483"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -46,20 +46,19 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path
-     style="fill:none;stroke:#000000;stroke-width:1.05831254;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 2.0412861,2.0412861 13.833402,13.833402"
-     id="path865"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
-  <path
-     sodipodi:nodetypes="cc"
-     inkscape:connector-curvature="0"
-     id="path867"
-     d="M 13.833402,2.0412861 2.0412861,13.833402"
-     style="fill:none;stroke:#000000;stroke-width:1.05831254;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:14.94144535px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#112233;fill-opacity:1;stroke:none;stroke-width:0.26457813;"
+     x="3.2280164"
+     y="12.216229"
+     id="text890"><tspan
+       sodipodi:role="line"
+       id="tspan888"
+       x="3.2280164"
+       y="12.216229"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.94144535px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26457813;fill:#112233;fill-opacity:1;">:(</tspan></text>
 </svg>
