@@ -48,7 +48,7 @@
     width: 100%;
     font-weight: 400;
 
-    transition: 0.2s all linear;
+    transition: 0.15s all linear;
   }
 
   a:link, a:visited {
@@ -79,7 +79,7 @@
     height: 100%;
     left: 0;
 
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
   }
 
   button span {

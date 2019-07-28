@@ -56,7 +56,7 @@ a {
 	text-decoration: none;
 }
 
-a:link, a:visited {
+a:any-link {
 	color: #06f;
 }
 

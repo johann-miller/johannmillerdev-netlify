@@ -16,6 +16,40 @@ button[type="submit"] {
 	overflow-x: hidden;
 }
 
+.links-container {
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+	padding-bottom: 2rem;
+	border-bottom: 1px #e7e7e7 solid;
+	width: 28rem;
+	max-width: 100%;
+}
+
+.links li {
+	margin-bottom: 1rem;
+}
+
+.links li a {
+	display: flex;
+	align-items: center;
+	transition: opacity 0.15s ease-in-out;
+}
+
+.links li a:hover {
+	opacity: 0.5;
+}
+
+.links li a:any-link {
+	color: inherit;
+}
+
+.links img {
+	width: 2rem;
+	height: auto;
+	margin-right: 1rem;
+}
+
 .show-feedback {
 	transform: translateX(-100%);
 }
@@ -29,14 +63,7 @@ button[type="submit"] {
 	justify-content: center;
 	flex-flow: column;
 	transition: all 0.3s ease-in-out;
-}
-
-.note {
-	max-width: 96vw;
-	margin-bottom: 2rem; 
-	padding: 0 1rem;
-
-	text-align: center;
+	padding-top: 2rem;
 }
 
 form {
@@ -191,45 +218,60 @@ function returnForm() {
 }
 </script>
 
-<div class="contact form">
-		<div class="form-section-container" class:show-feedback="{showFeedback}" transition:fade="{{duration: 100}}">
-			<span class="note">johann@johannmiller.dev</span>
-			<form action="" onsubmit="event.preventDefault()">
-			<label for="name">
-				Name
-					{#if nameError}
-						<span class="error" transition:fade="{{duration: 100}}">Please enter a name</span>
-					{/if}
-			</label>
-			<input type="text" name="name" bind:value="{name}" on:blur="{validateName}" required>
-			<label for="email">
-				Email
-					{#if emailError}
-						<span class="error" transition:fade="{{duration: 100}}">Please enter a valid email</span>
-					{/if}
-			</label>
-			<input type="email" name="email" bind:value="{email}" on:blur="{validateEmail}" required>
-			<label for="name">
-				Message
-					{#if messageError}
-						<span class="error" transition:fade="{{duration: 100}}">Please enter a message</span>
-					{/if}
-			</label>
-			<textarea
-				name="message"
-				oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
-				rows="4"
-				bind:value="{message}"
-				on:blur="{validateMessage}"
-				required></textarea>
-			<button type="submit" on:click="{submit}">Send</button>
-			</form>
-			{#await promise}
-				<div class="loading">
-					<img src="images/loading.svg" alt="Loading">
-				</div>
-			{/await}
-		</div>
+<div class="links-container">
+	<ul class="links">
+		<li>
+			<a target="_blank" href="mailto:johann@johannmiller.dev">
+				<img src="/images/envelope.svg" alt="Envelope">
+				johann@johannmiller.dev
+			</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://twitter.com/johannmiller_">
+				<img src="/images/twitter-logo.svg" alt="Twitter">
+				@johannmiller_
+			</a>
+		</li>
+	</ul>
+</div>
+<div class="contact">
+	<div class="form-section-container" class:show-feedback="{showFeedback}" transition:fade="{{duration: 100}}">
+		<form action="" onsubmit="event.preventDefault()">
+		<label for="name">
+			Name
+				{#if nameError}
+					<span class="error" transition:fade="{{duration: 100}}">Please enter a name</span>
+				{/if}
+		</label>
+		<input type="text" name="name" bind:value="{name}" on:blur="{validateName}" required>
+		<label for="email">
+			Email
+				{#if emailError}
+					<span class="error" transition:fade="{{duration: 100}}">Please enter a valid email</span>
+				{/if}
+		</label>
+		<input type="email" name="email" bind:value="{email}" on:blur="{validateEmail}" required>
+		<label for="name">
+			Message
+				{#if messageError}
+					<span class="error" transition:fade="{{duration: 100}}">Please enter a message</span>
+				{/if}
+		</label>
+		<textarea
+			name="message"
+			oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
+			rows="4"
+			bind:value="{message}"
+			on:blur="{validateMessage}"
+			required></textarea>
+		<button type="submit" on:click="{submit}">Send</button>
+		</form>
+		{#await promise}
+			<div class="loading">
+				<img src="images/loading.svg" alt="Loading">
+			</div>
+		{/await}
+	</div>
 	{#if showFeedback}
 		<div class="form-section-container" class:show-feedback="{showFeedback}" transition:fade="{{duration: 100}}">
 			<div class="form-feedback" class:send-error={sendError}>
