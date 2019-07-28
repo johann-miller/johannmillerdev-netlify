@@ -33,7 +33,7 @@ button[type="submit"] {
 
 .note {
 	max-width: 96vw;
-	margin-top: 2rem; 
+	margin-bottom: 2rem; 
 	padding: 0 1rem;
 
 	text-align: center;
@@ -41,7 +41,7 @@ button[type="submit"] {
 
 form {
 	width: 30rem;
-	max-width: 95vw;
+	max-width: 100%;
 	padding: 0 1rem;
 }
 
@@ -193,6 +193,7 @@ function returnForm() {
 
 <div class="contact form">
 		<div class="form-section-container" class:show-feedback="{showFeedback}" transition:fade="{{duration: 100}}">
+			<span class="note">johann@johannmiller.dev</span>
 			<form action="" onsubmit="event.preventDefault()">
 			<label for="name">
 				Name
@@ -223,7 +224,6 @@ function returnForm() {
 				required></textarea>
 			<button type="submit" on:click="{submit}">Send</button>
 			</form>
-			<span class="note">Or email me directly at johann@johannmiller.dev</span>
 			{#await promise}
 				<div class="loading">
 					<img src="images/loading.svg" alt="Loading">

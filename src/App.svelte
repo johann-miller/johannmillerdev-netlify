@@ -11,8 +11,9 @@ header {
 	justify-content: center;
 	background: #fafafa;
 	width: 100%;
-	margin-top: 3rem;
-	padding: 2rem 0;
+	padding: 1rem 0 2rem 0;
+
+	min-height: calc(100vh - 3rem - 1px);
 }
 
 header p {
@@ -29,6 +30,10 @@ header h1{
 	font-weight: bolder;
 	padding-bottom: 2rem;
 	border-bottom: 1px #404e5b solid; 
+}
+
+#contact {
+	margin-bottom: 3rem;
 }
 
 section {
@@ -53,7 +58,6 @@ main {
 @media only screen and (min-width: 60rem) {
 	header, section {
 		min-height: calc(100vh - 3rem);
-		margin-top: 0;
 	}
 
 	header h1 {
@@ -67,6 +71,10 @@ main {
 	header {
 		border-image: url('../images/border.svg') 30 round;
 		border-image-width: 15rem;
+	}
+
+	#contact {
+		margin-bottom: initial;
 	}
 }
 </style>

@@ -2,18 +2,19 @@
   nav {
     position: fixed;
     display: flex;
-    top: 0;
+    bottom: 0;
     z-index: 1;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     height: 3rem;
     width: 100%;
 
     background: #fafafa;
+    border-top: 1px #e7e7e7 solid;
   }
   ul {
     position: fixed;
-    top: 3rem;
+    bottom: 3rem;
     width: 100vw;
     left: 100vw;
 
@@ -31,9 +32,12 @@
     display: flex;
     align-items: center;
     height: 3rem;
+  }
 
+  ul li:not(:last-child) {
     border-bottom: 1px #e7e7e7 solid;
   }
+
   a {
     display: flex;
     justify-content: flex-start;
@@ -55,7 +59,7 @@
     display: flex;
     align-items: center;
     z-index: 1;
-    padding-right: 1rem;
+    padding-left: 1rem;
 
     cursor: pointer;
     font-size: inherit;
@@ -67,7 +71,7 @@
     width: auto;
   }
   button span {
-    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     font-family: inherit;
     font-size: inherit;
     color: #404e5b;
@@ -81,6 +85,7 @@
     nav {
       position: sticky;
       justify-content: center;
+      top: 0;
     }
 
     button {
@@ -101,6 +106,10 @@
 
     ul li {
       border: none;
+    }
+
+    ul li:not(:last-child) {
+      border-bottom: initial;
     }
 
     a, a:link, a:visited {
@@ -132,7 +141,7 @@
     <li><a href="/#contact" on:click="{toggleMenu}">Contact</a></li>
   </ul>
   <button on:click="{toggleMenu}">
-    <span>Menu</span>
     <img src="images/burger-menu.svg" alt="menu-icon">
+    <span>Menu</span>
   </button>
 </nav>
