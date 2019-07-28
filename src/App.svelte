@@ -18,15 +18,17 @@ header {
 header p {
 	max-width: 22rem;
 	text-align: center;
-	padding: 2rem 1rem;
+	padding: 0 1rem;
+	margin-bottom: 2rem;
 	text-align: left;
-	border-top: 1px #404e5b solid;
 }
 
 header h1{
 	color: #123;
 	text-align: left;
 	font-weight: bolder;
+	padding-bottom: 2rem;
+	border-bottom: 1px #404e5b solid; 
 }
 
 section {
@@ -52,6 +54,19 @@ main {
 	header, section {
 		min-height: calc(100vh - 3rem);
 		margin-top: 0;
+	}
+
+	header h1 {
+		font-size: 4.5rem;
+	}
+
+	header p {
+		padding: 0;
+	}
+
+	header {
+		border-image: url('../images/border.svg') 30 round;
+		border-image-width: 15rem;
 	}
 }
 </style>
