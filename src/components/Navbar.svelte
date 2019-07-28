@@ -91,7 +91,7 @@
       display: flex;
       top: 0;
       position: relative;
-      right: inherit;
+      left: inherit;
       opacity: 1;
       flex-flow: row;
       width: auto;
