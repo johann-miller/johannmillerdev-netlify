@@ -24,19 +24,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 	line-height: 1.2;
 	color: #123;
+	font-size: 2rem;
 }
 
 h1 {
 	font-size: 3.2rem;
 	text-align: center;
-}
-
-h2 {
-	font-size: 2rem;
-}
-
-h3, h4, h5, h6 {
-	font-size: 2rem;
 }
 
 a, p, span, input, textarea {
