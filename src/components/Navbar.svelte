@@ -9,7 +9,7 @@
     height: 3rem;
     width: 100%;
 
-    background: #fafafa;
+    background: #f7f7f7;
     border-top: 1px #e7e7e7 solid;
   }
   ul {
@@ -18,7 +18,7 @@
     width: 100vw;
     left: 100vw;
 
-    background: #fafafa;
+    background: #f7f7f7;
 
     transition: 0.2s all ease-in-out;
     opacity: 0;

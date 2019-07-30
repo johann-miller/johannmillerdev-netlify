@@ -9,7 +9,7 @@ header {
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-	background: #fafafa;
+	background: #f7f7f7;
 	width: 100%;
 	padding: 1rem 0 2rem 0;
 

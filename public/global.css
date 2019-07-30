@@ -16,6 +16,7 @@ body {
 	font-size: 20px;
 	line-height: 1.8;
 	color: #404e5b;
+	background: #fafafa;
 	-webkit-scroll-behavior: smooth;
 	scroll-behavior: smooth;
 }
@@ -71,7 +72,7 @@ input, textarea {
 	font-family: inherit;
 	font-size: inherit;
 	color: #404e5b;
-	background: #fafafa;
+	background: #f7f7f7;
 	border: none;
 	border: 1px #e7e7e7 solid;
 }
@@ -99,7 +100,7 @@ button, a[role="button"], a[role="button"]:any-link {
 
 	border-radius: 0.3rem;
 	background: #123;
-	color: white;
+	color: #fcfaf8;
 	border: none;
 
 	font-family: inherit;
