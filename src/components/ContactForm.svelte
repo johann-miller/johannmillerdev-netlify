@@ -30,17 +30,17 @@ button[type="submit"] {
 	margin-bottom: 1rem;
 }
 
-.links li a {
+.links a {
 	display: flex;
 	align-items: center;
 	transition: opacity 0.15s ease-in-out;
 }
 
-.links li a:hover {
+.links a:hover {
 	opacity: 0.5;
 }
 
-.links li a:any-link {
+.links a:any-link {
 	color: inherit;
 }
 
@@ -83,14 +83,14 @@ form {
 	color: green;
 }
 
-.form-feedback img {
-	height: 5rem;
-	width: auto;
-}
-
 .form-feedback span {
 	text-align: center;
 	margin: 2rem 0;
+}
+
+.feedback-text {
+	font-size: 6rem;
+	font-weight: 400;
 }
 
 .loading {
@@ -276,10 +276,10 @@ function returnForm() {
 		<div class="form-section-container" class:show-feedback="{showFeedback}" transition:fade="{{duration: 100}}">
 			<div class="form-feedback" class:send-error={sendError}>
 				{#if !sendError}
-					<img src="images/smile-emoticon.svg" alt="Smile emoticon">
+					<span class="feedback-text">:)</span>
 				{/if}
 				{#if sendError}
-					<img src="images/frown-emoticon.svg" alt="Frown emoticon">
+					<span class="feedback-text">:(</span>
 				{/if}
 				<span>{statusMessage}</span>
 				<button on:click="{returnForm}">
