@@ -74,7 +74,7 @@ input, textarea {
 	color: #404e5b;
 	background: #f7f7f7;
 	border: none;
-	border: 1px #e7e7e7 solid;
+	border: 1px #cfcfcf solid;
 }
 
 input:required, textarea:required {
