@@ -16,6 +16,10 @@ button[type="submit"] {
 	overflow-x: hidden;
 }
 
+.error {
+	color: red;
+}
+
 .links-container {
 	display: flex;
 	align-items: center;

@@ -71,10 +71,6 @@ form {
 	align-items: flex-start;
 }
 
-.error {
-	color: red;
-}
-
 input, textarea {
 	padding: 0.4rem;
 	margin-bottom: 1rem;
@@ -101,7 +97,7 @@ textarea {
 	overflow-y: hidden;
 }
 
-button, a[role="button"], a[role="button"]:link, a[role="button"]:visited {
+button, a[role="button"], a[role="button"]:any-link {
 	display: flex;
 	align-items: center;
 	padding: 0 2rem;
@@ -120,10 +116,10 @@ button, a[role="button"], a[role="button"]:link, a[role="button"]:visited {
 	transition: 0.2s all ease-out;
 }
 
-button:hover, a[role="button"]:hover, a[role="button"]:link:hover, a[role="button"]:visited:hover {
+button:hover, a[role="button"]:hover, a[role="button"]:any-link:hover {
 	opacity: 0.5;
 }
 
-button:active, a[role="button"], a[role="button"]:link, a[role="button"]:visited {
+button:active, a[role="button"], a[role="button"]:any-link {
 	opacity: 1;
 }
