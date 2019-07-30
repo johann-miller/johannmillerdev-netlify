@@ -98,14 +98,9 @@ form {
 }
 
 .loading {
-	position: absolute;
-	width: 100%;
-	height: calc(100% - 2rem);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 2;
-	background: rgba(255, 255, 255, 0.9);
+	height: 100%;
+	width: auto;
+	margin-left: 1rem;
 }
 </style>
 <script>
@@ -268,13 +263,13 @@ function returnForm() {
 			bind:value="{message}"
 			on:blur="{validateMessage}"
 			required></textarea>
-		<button type="submit" on:click="{submit}">Send</button>
+		<button type="submit" on:click="{submit}">
+			Send
+			{#await promise}
+				<img src="images/loading.svg" alt="Loading" class="loading">
+			{/await}
+		</button>
 		</form>
-		{#await promise}
-			<div class="loading">
-				<img src="images/loading.svg" alt="Loading">
-			</div>
-		{/await}
 	</div>
 	{#if showFeedback}
 		<div class="form-section-container" class:show-feedback="{showFeedback}" transition:fade="{{duration: 100}}">
