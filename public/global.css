@@ -94,7 +94,7 @@ textarea {
 button, a[role="button"], a[role="button"]:any-link {
 	display: flex;
 	align-items: center;
-	padding: 0.25rem 1rem;
+	padding: 0.25rem 1.5rem;
 	height: 2.2rem;
 	font-weight: 400;
 
