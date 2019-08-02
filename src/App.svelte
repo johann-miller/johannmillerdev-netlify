@@ -36,6 +36,11 @@ header h1{
 	margin-bottom: 3rem;
 }
 
+#portfolio {
+	border-top: 1px #e7e7e7 solid;
+	width: 100%;
+}
+
 section {
 	display: flex;
 	flex-flow: column;
