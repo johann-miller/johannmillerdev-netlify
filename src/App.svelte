@@ -4,6 +4,10 @@ h1 {
 	padding: 0 1rem;
 }
 
+header, section {
+	min-height: calc(100vh - 3rem);
+}
+
 header {
 	display: flex;
 	flex-flow: column;
@@ -12,8 +16,6 @@ header {
 	background: #f7f7f7;
 	width: 100%;
 	padding: 1rem 0 2rem 0;
-
-	min-height: calc(100vh - 3rem - 1px);
 }
 
 header p {
@@ -36,11 +38,6 @@ header h1{
 	margin-bottom: 3rem;
 }
 
-#portfolio {
-	border-top: 1px #e7e7e7 solid;
-	width: 100%;
-}
-
 section {
 	display: flex;
 	flex-flow: column;
@@ -61,10 +58,6 @@ main {
 }
 
 @media only screen and (min-width: 60rem) {
-	header, section {
-		min-height: calc(100vh - 3rem);
-	}
-
 	header h1 {
 		font-size: 4.5rem;
 	}
@@ -96,10 +89,10 @@ import ContactForm from './components/ContactForm.svelte'
 <main>
 	<Navbar />
 	<header id="about-me">
-			<h1>Johann<br>Miller<br>Developer<br>& Designer</h1>
+			<h1>Johann<br>Miller,<br>Developer<br>& Designer</h1>
 			<p>
-				I work with businesses and individuals in Columbus, Ohio to give their ideas a modern website with a great user experience.
-				If that sounds like something I can help you with, let's get in touch!
+				I work with people in Columbus, Ohio to give their ideas modern websites with a great user experience.  If that sounds
+				like something I can help you with, let's get in touch!
 			</p>
 			<a href="/#contact" role="button" class="contact-button">Contact</a>
 	</header>
