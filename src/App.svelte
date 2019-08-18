@@ -13,7 +13,6 @@ header {
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-	background: #f7f7f7;
 	width: 100%;
 	padding: 3rem 0;
 }
@@ -30,7 +29,14 @@ header h1{
 	text-align: left;
 	font-weight: bolder;
 	padding-bottom: 2rem;
-	border-bottom: 1px #306 solid; 
+	border-bottom: 1px #221f7e solid; 
+	max-width: calc(100% - 2rem);
+}
+
+.info-container {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 }
 
 #contact {
@@ -57,17 +63,42 @@ main {
 }
 
 @media only screen and (min-width: 60rem) {
-	header h1 {
-		font-size: 4.5rem;
-	}
 
-	header p {
-		padding: 0;
+	@keyframes height {
+		from {height: 0;}
+		to {height: 100%;}
 	}
 
 	header {
-		border-image: url('../images/border.svg') 30 round;
-		border-image-width: 15rem;
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: auto;
+		justify-items: center;
+
+		min-height: initial;
+		width: 60rem;
+	}
+
+	header h1 {
+		font-size: 4.5rem;
+		padding: 2rem;
+		margin: 0;
+		border: none;
+		justify-self: stretch;
+		justify-content: center;
+		display: flex;
+	}
+
+	header p {
+		padding: 2rem;
+	}
+
+	.info-container {
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		border-left: 1px #221f7e solid;
+		animation: height 0.7s linear;
 	}
 
 	#contact {
@@ -88,12 +119,14 @@ import ContactForm from './components/ContactForm.svelte'
 <main>
 	<Navbar />
 	<header id="about-me">
-			<h1>Johann<br>Miller<br>Developer<br>& Designer</h1>
+		<h1>Johann<br>Miller<br>Developer<br>& Designer</h1>
+		<div class="info-container">
 			<p>
-				I work with people in Columbus, Ohio to give their ideas modern websites with a great user experience.  If that sounds
-				like something I can help you with, let's get in touch!
+			I work with people in Columbus, Ohio to give their ideas modern websites with a great user experience.  If that sounds
+			like something I can help you with, let's get in touch!
 			</p>
 			<a href="/#contact" role="button" class="contact-button">Contact</a>
+		</div>
 	</header>
 	<section id="portfolio">
 		<h1>Portfolio</h1>

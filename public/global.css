@@ -16,7 +16,7 @@ body {
 	font-size: 20px;
 	line-height: 1.8;
 	color: #404e5b;
-	background: #fafafa;
+	background: #fcfcfc;
 	-webkit-scroll-behavior: smooth;
 	scroll-behavior: smooth;
 }
@@ -24,7 +24,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 	line-height: 1.2;
-	color: #306;
+	color: #221f7e;
 	font-size: 2rem;
 }
 
@@ -41,7 +41,7 @@ a, p, span, input, textarea {
 
 label {
 	font-weight: 300;
-	color: #306;
+	color: #221f7e;
 	line-height: 1.5;
 }
 
@@ -99,7 +99,7 @@ button, a[role="button"], a[role="button"]:any-link {
 	font-weight: 400;
 
 	border-radius: 0.3rem;
-	background: #306;
+	background: #221f7e;
 	color: #fcfaf8;
 	border: none;
 

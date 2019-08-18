@@ -9,7 +9,7 @@ nav {
   height: 3rem;
   width: 100%;
 
-  background: #f7f7f7;
+  background: #fcfcfc;
   border-top: 1px #e7e7e7 solid;
 }
 ul {
@@ -18,8 +18,7 @@ ul {
   width: 100vw;
   left: 100vw;
 
-  background: #f7f7f7;
-
+  background: #fcfcfc;
   transition: 0.2s all ease-in-out;
   opacity: 0;
 }
@@ -51,7 +50,7 @@ a {
 }
 
 a:link, a:visited {
-  color: #306;
+  color: #221f7e;
 }
 
 button {
@@ -85,7 +84,7 @@ button span {
   margin-left: 0.5rem;
   font-family: inherit;
   font-size: inherit;
-  color: #306;
+  color: #221f7e;
 }
 
 .opened-menu {
@@ -100,10 +99,8 @@ button span {
 @media only screen and (min-width: 60rem) {
   nav {
     position: sticky;
-    justify-content: center;
+    justify-content: flex-end;
     top: 0;
-    
-    border-bottom: 1px #e7e7e7 solid;
   }
 
   button {
@@ -138,7 +135,7 @@ button span {
   }
 
   a:hover {
-    color: #306;
+    color: #221f7e;
     opacity: 1;
   }
 }
