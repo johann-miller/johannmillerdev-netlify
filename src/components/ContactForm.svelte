@@ -88,6 +88,7 @@ form {
 }
 
 .form-feedback span {
+	color: #306;
 	text-align: center;
 	margin: 2rem 0;
 }
