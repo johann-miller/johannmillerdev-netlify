@@ -24,7 +24,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 	line-height: 1.2;
-	color: #123;
+	color: #306;
 	font-size: 2rem;
 }
 
@@ -40,8 +40,8 @@ a, p, span, input, textarea {
 }
 
 label {
-	font-weight: 400;
-	color: #404e5b;
+	font-weight: 300;
+	color: #306;
 	line-height: 1.5;
 }
 
@@ -99,7 +99,7 @@ button, a[role="button"], a[role="button"]:any-link {
 	font-weight: 400;
 
 	border-radius: 0.3rem;
-	background: #123;
+	background: #306;
 	color: #fcfaf8;
 	border: none;
 

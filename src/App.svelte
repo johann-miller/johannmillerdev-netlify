@@ -15,7 +15,7 @@ header {
 	justify-content: center;
 	background: #f7f7f7;
 	width: 100%;
-	padding: 1rem 0 2rem 0;
+	padding: 3rem 0;
 }
 
 header p {
@@ -27,11 +27,10 @@ header p {
 }
 
 header h1{
-	color: #123;
 	text-align: left;
 	font-weight: bolder;
 	padding-bottom: 2rem;
-	border-bottom: 1px #404e5b solid; 
+	border-bottom: 1px #306 solid; 
 }
 
 #contact {
@@ -89,7 +88,7 @@ import ContactForm from './components/ContactForm.svelte'
 <main>
 	<Navbar />
 	<header id="about-me">
-			<h1>Johann<br>Miller,<br>Developer<br>& Designer</h1>
+			<h1>Johann<br>Miller<br>Developer<br>& Designer</h1>
 			<p>
 				I work with people in Columbus, Ohio to give their ideas modern websites with a great user experience.  If that sounds
 				like something I can help you with, let's get in touch!

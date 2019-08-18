@@ -51,7 +51,7 @@ a {
 }
 
 a:link, a:visited {
-  color: inherit;
+  color: #306;
 }
 
 button {
@@ -85,7 +85,7 @@ button span {
   margin-left: 0.5rem;
   font-family: inherit;
   font-size: inherit;
-  color: #404e5b;
+  color: #306;
 }
 
 .opened-menu {
@@ -102,6 +102,8 @@ button span {
     position: sticky;
     justify-content: center;
     top: 0;
+    
+    border-bottom: 1px #e7e7e7 solid;
   }
 
   button {
@@ -136,7 +138,7 @@ button span {
   }
 
   a:hover {
-    color: #123;
+    color: #306;
     opacity: 1;
   }
 }
