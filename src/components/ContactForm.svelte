@@ -30,10 +30,6 @@ button[type="submit"] {
 	max-width: 100%;
 }
 
-.links li {
-	margin-bottom: 1rem;
-}
-
 .links a {
 	display: flex;
 	align-items: center;
@@ -224,12 +220,6 @@ function returnForm() {
 			<a target="_blank" href="mailto:johann@johannmiller.dev">
 				<img src="/images/envelope.svg" alt="Envelope">
 				johann@johannmiller.dev
-			</a>
-		</li>
-		<li>
-			<a target="_blank" href="https://twitter.com/johannmiller_">
-				<img src="/images/twitter-logo.svg" alt="Twitter">
-				@johannmiller_
 			</a>
 		</li>
 	</ul>

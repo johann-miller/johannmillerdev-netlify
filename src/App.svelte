@@ -1,4 +1,9 @@
 <style>
+@keyframes slide {
+	from {right: 100%;}
+	to {right: 0;}
+}
+
 h1 {
 	margin-bottom: 2rem;
 	padding: 0 1rem;
@@ -37,6 +42,11 @@ header h1{
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+}
+
+.info-container > * {
+	position: relative;
+	animation: slide 0.3s ease-in;
 }
 
 #contact {
@@ -98,7 +108,12 @@ main {
 		width: 100%;
 		height: 100%;
 		border-left: 1px #221f7e solid;
-		animation: height 0.7s linear;
+		animation: height 0.7s ease-in;
+		overflow: hidden;	
+	}
+
+	.info-container > * {
+		animation-duration: 0.7s;
 	}
 
 	#contact {
