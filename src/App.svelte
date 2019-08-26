@@ -33,7 +33,7 @@ header p {
 header h1{
 	text-align: left;
 	font-weight: bolder;
-	padding-bottom: 2rem;
+	padding: 0 0 1rem 0;
 	border-bottom: 1px #221f7e solid; 
 	max-width: calc(100% - 2rem);
 }

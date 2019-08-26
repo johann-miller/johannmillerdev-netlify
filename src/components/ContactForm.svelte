@@ -34,6 +34,9 @@ button[type="submit"] {
 	display: flex;
 	align-items: center;
 	transition: opacity 0.15s ease-in-out;
+	padding: 0.5rem 1rem;
+	border-radius: 0.2rem;
+	border: 1px #cfcfcf solid;
 }
 
 .links a:hover {
