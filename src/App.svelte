@@ -25,7 +25,7 @@ header {
 header p {
 	max-width: 22rem;
 	text-align: center;
-	padding: 0 1rem;
+	padding: 0 2rem;
 	margin-bottom: 2rem;
 	text-align: left;
 }
@@ -90,7 +90,7 @@ main {
 	}
 
 	header h1 {
-		font-size: 4.5rem;
+		font-size: 4rem;
 		padding: 2rem;
 		margin: 0;
 		border: none;
@@ -100,7 +100,7 @@ main {
 	}
 
 	header p {
-		padding: 2rem;
+		padding: 3rem;
 	}
 
 	.info-container {
