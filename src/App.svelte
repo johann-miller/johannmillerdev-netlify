@@ -75,8 +75,8 @@ main {
 @media only screen and (min-width: 60rem) {
 
 	@keyframes height {
-		from {height: 0;}
-		to {height: 100%;}
+		from {opacity: 0;}
+		to {opacity: 1;}
 	}
 
 	header {
@@ -84,9 +84,11 @@ main {
 		grid-template-columns: repeat(2, 50%);
 		grid-template-rows: auto;
 		justify-items: center;
+		margin: 0;
+		padding: 2rem 0;
 
-		min-height: initial;
-		width: 60rem;
+		min-height: 60vh;
+		width: 55rem;
 	}
 
 	header h1 {
@@ -106,7 +108,7 @@ main {
 	.info-container {
 		justify-content: center;
 		width: 100%;
-		height: 100%;
+		height: auto;
 		border-left: 1px #221f7e solid;
 		animation: height 0.7s ease-in;
 		overflow: hidden;	
