@@ -47,7 +47,7 @@ exports.handler = function(event, context, callback){
 
   let myData = {
     from: 'noreply@mail.johannmiller.dev',
-    to: 'johann@johannmiller.dev',
+    to: 'johann.miller@protonmail.com',
     subject: 'New message from ' + name,
     text: name + ' (' + email + ') wants to get in touch! \n\n' + message
   }

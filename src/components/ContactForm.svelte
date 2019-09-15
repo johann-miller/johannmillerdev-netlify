@@ -119,7 +119,7 @@ let sendError = false
 let nameError, emailError, messageError = false
 
 // Message texts
-let errorMessage = 'There was an error sending your message.  Please email me directly at johann@johannmiller.dev'
+let errorMessage = 'There was an error sending your message.  Please email me directly at johann.miller@protonmail.com'
 let successMessage = 'Your message was sent.  A confirmation will be emailed to you shortly.'
 
 // showFeedback a css class, promise is used for svelte load block
@@ -220,9 +220,9 @@ function returnForm() {
 <div class="links-container">
 	<ul class="links">
 		<li>
-			<a target="_blank" href="mailto:johann@johannmiller.dev">
+			<a target="_blank" href="mailto:johann.miller@protonmail.com">
 				<img src="/images/envelope.svg" alt="Envelope">
-				johann@johannmiller.dev
+				johann.miller@protonmail.com
 			</a>
 		</li>
 	</ul>
